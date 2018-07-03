@@ -1,10 +1,7 @@
-if name=='__main__':
-	outputFile = raw_input('Please enter the name of the output text file:\n')
-	with open(outputFile, "w") as text_file:
-    	text_file.write(ReturnPDFText())
-
 def ReturnPDFText(path = 'none'):
 
+
+	##Adding some lines in here as a test to Github
 
 	## FIND FILE INFORMATION:
 	import os 
@@ -31,6 +28,13 @@ def ReturnPDFText(path = 'none'):
 		PDFlist.append(	'\f'.join(pdfPages))
 
 	return '\f\f'.join(PDFlist)
+
+if name=='__main__':
+	outputFile = raw_input('Please enter the name of the output text file:\n')
+	with open(outputFile, "w") as text_file:
+    	text_file.write(ReturnPDFText())
+
+
 
 
 
